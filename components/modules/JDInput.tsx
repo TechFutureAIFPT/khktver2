@@ -231,7 +231,7 @@ const JDInput: React.FC<JDInputProps> = ({ jdText, setJdText, jobPosition, setJo
 • Quyền lợi và phúc lợi
 • Thông tin về công ty
 
-💡 Hoặc sử dụng OCR để scan từ file PDF/DOCX (Word)"
+💡 Hoặc sử dụng OCR để scan từ file PDF/DOCX/PNG/JPG"
                     value={jdText}
                     onChange={(e) => setJdText(e.target.value)}
                   ></textarea>
@@ -278,7 +278,7 @@ const JDInput: React.FC<JDInputProps> = ({ jdText, setJdText, jobPosition, setJo
               ) : (
                 <label
                   htmlFor="ocr-jd-input"
-                  title="Nhận JD từ PDF/DOCX bằng OCR"
+                  title="Nhận JD từ PDF/DOCX/PNG/JPG bằng OCR"
                   aria-label="Quét OCR JD"
                   className="flex-1 cursor-pointer h-14 px-3 sm:px-6 flex items-center justify-center text-sm font-medium text-white bg-gradient-to-r from-blue-500 to-cyan-600 rounded-xl hover:from-blue-600 hover:to-cyan-700 hover:shadow-xl hover:shadow-blue-500/25 hover:-translate-y-0.5 transition-all duration-300 shadow-lg group"
                 >
@@ -289,7 +289,7 @@ const JDInput: React.FC<JDInputProps> = ({ jdText, setJdText, jobPosition, setJo
                     id="ocr-jd-input"
                     type="file"
                     className="hidden"
-                    accept=".pdf,.docx"
+                    accept=".pdf,.docx,.png,.jpg,.jpeg"
                     onChange={handleOcrFileChange}
                     onClick={(e) => { (e.target as HTMLInputElement).value = '' }}
                     disabled={isOcrLoading || isSummarizing}
