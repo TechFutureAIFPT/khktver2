@@ -1,0 +1,27 @@
+{
+  "name": "Support HR - AI Recruitment",
+  "short_name": "Support HR",
+  "description": "Giải pháp AI hỗ trợ HR tuyển dụng thông minh",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B1220",
+  "theme_color": "#0B1220",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/logos/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/logos/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "vi-VN",
+  "dir": "ltr"
+}
