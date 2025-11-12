@@ -115,7 +115,7 @@ const CVUpload: React.FC<CVUploadProps> = memo((props) => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">Kéo thả hoặc nhấp để chọn file</h3>
-                  <p className="text-slate-400 mb-3">Hỗ trợ định dạng: PDF, DOCX</p>
+                  <p className="text-slate-400 mb-3">Hỗ trợ định dạng: PDF, DOCX, PNG, JPG</p>
                   <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/20 border border-orange-500/30 rounded-xl text-orange-400 text-sm font-medium">
                     <i className="fa-solid fa-info-circle"></i>
                     <span>Tối đa 12 CV mỗi lần phân tích</span>
@@ -127,7 +127,7 @@ const CVUpload: React.FC<CVUploadProps> = memo((props) => {
               type="file" 
               id="cv-files" 
               multiple 
-              accept=".pdf,.docx" 
+              accept=".pdf,.docx,.png,.jpg,.jpeg" 
               className="hidden" 
               onChange={handleFileChange} 
             />
