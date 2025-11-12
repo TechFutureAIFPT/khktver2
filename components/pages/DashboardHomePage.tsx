@@ -94,7 +94,7 @@ const DashboardHomePage: React.FC<DashboardHomePageProps> = memo(({ setActiveSte
     },
     { 
       step: '03', 
-      title: 'Upload CV hàng loạt', 
+      title: 'Tải Hồ Sơ hàng loạt', 
       desc: 'Kéo thả nhiều file PDF cùng lúc', 
       icon: 'fa-file-arrow-up', 
       color: 'text-emerald-400',
